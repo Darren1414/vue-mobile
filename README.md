@@ -7,47 +7,29 @@
 （3）在浏览器输入 http://localhost:8080/#/  
 （4）浏览器如果正常输出，运行成功 
 
-# 代码说明
-│  index.html  
+# 主要代码说明
+│index.html  
 │  
-├─build  
-│      build.js  
-│      check-versions.js  
-│      logo.png  
-│      utils.js  
-│      vue-loader.conf.js  
-│      webpack.base.conf.js  
-│      webpack.dev.conf.js  
-│      webpack.prod.conf.js  
+├─build   
 │      
 ├─config  
-│      dev.env.js  
-│      index.js  
-│      prod.env.js  
 │        
 ├─src  
-│  │  App.vue  
-│  │  main.js  
-│  │    
-│  ├─assets  
-│  │  │  logo.png  
-│  │  │    
-│  │  └─css  
-│  │          my-mint.scss  
+│  │　　App.vue  
+│  │　　main.js  
 │  │          
 │  ├─common  
-│  │      request.js  
+│  │　　　　request.js　（封装通用ｈｔｔｐ请求，基于axios和promist）  
 │  │        
 │  ├─components  
-│  │      HelloWorld.vue  
+│  │　　　　HelloWorld.vue  
 │  │        
 │  ├─router  
-│  │      index.js  
+│  │　　　　index.js  
 │  │      
 │  └─services  
-│          ApiBase.js  
-│          LoginService.js  
+│　　　　　　ApiBase.js （对接后端通用基类）  
+│　　　　　　LoginService.js　（和后端对接具体逻辑，这里是用登陆做例子）  
 │            
 └─static  
-        .gitkeep  
         
