@@ -1,21 +1,53 @@
-# my-project
+# vue-mobile
+一个基于vue的移动程序框架，封装了await异步请求模块，使用方便
 
-> A Vue.js project
+# 简单用法
+（1）安装依赖 npm install  
+（2）运行 npm run dev  
+（3）在浏览器输入 http://localhost:8080/#/  
+（4）浏览器如果正常输出，运行成功 
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 代码说明
+│  index.html  
+│  
+├─build  
+│      build.js  
+│      check-versions.js  
+│      logo.png  
+│      utils.js  
+│      vue-loader.conf.js  
+│      webpack.base.conf.js  
+│      webpack.dev.conf.js  
+│      webpack.prod.conf.js  
+│      
+├─config  
+│      dev.env.js  
+│      index.js  
+│      prod.env.js  
+│        
+├─src  
+│  │  App.vue  
+│  │  main.js  
+│  │    
+│  ├─assets  
+│  │  │  logo.png  
+│  │  │    
+│  │  └─css  
+│  │          my-mint.scss  
+│  │          
+│  ├─common  
+│  │      request.js  
+│  │        
+│  ├─components  
+│  │      HelloWorld.vue  
+│  │        
+│  ├─router  
+│  │      index.js  
+│  │      
+│  └─services  
+│          ApiBase.js  
+│          LoginService.js  
+│            
+└─static  
+        .gitkeep  
+        
